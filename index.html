@@ -1,0 +1,164 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href = "colorchanger.jpg">
+    <title> Color Changer </title>
+    <style>
+        #bd{
+            background-image: url('grey.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height:100vh;
+            overflow-x: hidden;
+        }
+        .button{
+            background-color: #DE300B;
+            border : none;
+            color: white;
+            padding: 22px 42px;
+            font-size: 18px;
+            text-align: center;
+            text-decoration: none;
+            display: flex;
+            border-radius: 5px;
+        }
+        .button:hover, .button2:hover, .button3:hover, .button4:hover, .button5:hover, .button6:hover{
+            opacity: 0.9;
+        }
+        .button2{
+            background-color: #0B0BDE;
+            border : none;
+            color: white;
+            padding: 22px 42px;
+            font-size: 15px;
+            text-align: center;
+            text-decoration: none;
+            display: flex;
+            border-radius: 5px;
+        }
+        .button3{
+            background-color: green;
+            border : none;
+            color: white;
+            padding: 22px 42px;
+            font-size: 15px;
+            text-align: center;
+            text-decoration: none;
+            display: flex;
+            border-radius: 5px;    
+        }
+        .button4{
+            background-color: pink;
+            border : none;
+            color: white;
+            padding: 22px 42px;
+            font-size: 15px;
+            text-align: center;
+            text-decoration: none;
+            display: flex;
+            border-radius: 5px;    
+        
+        }
+        .button5{
+            background-color: orange;
+            border : none;
+            color: white;
+            padding: 22px 42px;
+            font-size: 15px;
+            text-align: center;
+            text-decoration: none;
+            display: flex;
+            border-radius: 5px;    
+        }
+        .button6{
+            background-color: yellow;
+            border : none;
+            color: white;
+            padding: 22px 42px;
+            font-size: 15px;
+            text-align: center;
+            text-decoration: none;
+            display: flex;
+            border-radius: 5px;    
+        
+        }
+        .container{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+        }
+        button{
+            margin:18px;
+            position: relative;
+            top:15px;
+        }
+        * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body {
+ font-family: century gothic;
+}
+        .topnav{
+            background-color: rgb(147, 63, 178);
+            padding: 13px;
+        }
+        .topnav h1{
+            text-align: center;
+            color: white;
+            letter-spacing: 3px;
+        }
+        footer p{
+            color: #ccc;
+            font-family:papyrus;
+            position: absolute;
+            bottom: 0;
+            top:auto;
+           right: 12px;
+           letter-spacing:3px;
+        }
+    </style>
+</head>
+<body id = "bd">
+    <div class = "topnav">
+        <h1> Color Changer </h1>
+    </div> 
+    <div class="container">
+    <button class = "button" onclick="myFunction()"> Red </button>
+    <button class = "button2" onclick="myFunction2()"> Blue </button>
+    <button class = "button3" onclick="myFunction3()"> Green </button>
+    <button class = "button4" onclick="myFunction4()"> Pink </button>
+    <button class = "button5" onclick="myFunction5()"> Orange </button>
+    <button class = "button6" onclick="myFunction6()"> Yellow </button>
+</div>
+    <script>
+        function myFunction(){
+            document.getElementById("bd").style.backgroundImage = "url(red.jpg)";
+        }
+        function myFunction2(){
+            document.getElementById("bd").style.backgroundImage = "url(blue.jpg)";
+        }
+        function myFunction3(){
+            document.getElementById("bd").style.backgroundImage = "url(green.jpg)";
+        }
+        function myFunction4(){
+            document.getElementById("bd").style.backgroundImage = "url(pink.jpg)";
+        }
+        function myFunction5(){
+            document.getElementById("bd").style.backgroundImage = "url(orange.jpg)";
+        }
+        function myFunction6(){
+            document.getElementById("bd").style.backgroundImage = "url(yellow.jpg)";
+        }
+    </script>
+    <footer>
+        <p> Design By Bhavnish Arora </p>
+    </footer>    
+</body>
+</html>
